@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "fsdf",
+      "description": "sdd",
+      "price": 1.25,
+      "created": "2020-20-012"
+    }
+  ]
+}

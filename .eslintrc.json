@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "semi": [
+      2,
+      "always"
+    ],
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-param-reassign": 0,
+    "no-use-before-define": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "arrow-body-style": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "import/prefer-default-export": 0,
+    "default-case": 0,
+    "no-shadow": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-confusing-arrow": 0,
+    "object-curly-newline": 0,
+    "no-underscore-dangle": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0
+  },
+  "globals": {
+    "React": "writable"
+  }
+}
+// Note the “react/react-in-jsx-scope”: “off” under rules, and “React” under “globals”. 
+// Without these, you will get errors since NextJs does not require you to import React into each component

@@ -455,6 +455,10 @@ const GlobalStyles = (): React.ReactElement => {
     }
   }
 
+  #nprogress .bar {
+    background: #B7D4FF !important;
+  }
+
   form {
     display: flex;
     flex-direction: column;
